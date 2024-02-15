@@ -9696,6 +9696,15 @@ ul {
       margin-right: 40px; }
     .header__tools .header__items {
       margin-right: 25px; } }
+  @media (max-width: 1199.98px) {
+    .header__link {
+      font-size: 17px; }
+    .header__logo img {
+      width: 140px; }
+    .header__menu .header__items {
+      margin-right: 25px; }
+    .header__tools .header__items {
+      margin-right: 20px; } }
 
 @media (min-width: 1660px) {
   .container {
