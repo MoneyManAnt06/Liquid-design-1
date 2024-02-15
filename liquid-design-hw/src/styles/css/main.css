@@ -9627,6 +9627,12 @@ ul {
   background-color: #000000;
   font-family: "Raleway", sans-serif;
   width: 100%; }
+  .header__container {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    justify-content: space-between; }
   .header__up {
     padding-bottom: 12px;
     padding-top: 11px; }
@@ -9642,16 +9648,17 @@ ul {
     height: 100%;
     justify-content: center;
     justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 14px;
     width: 100%; }
-    .header__down-container {
-      align-items: center;
-      display: flex;
-      height: 100%;
-      justify-content: center;
-      justify-content: space-between; }
   .header__row {
     align-items: center;
-    display: flex; }
+    display: flex;
+    height: 100%; }
+  .header__logo img {
+    height: auto;
+    margin-left: 60px;
+    width: 155px; }
   .header__links {
     display: flex;
     list-style: none; }
@@ -9660,11 +9667,38 @@ ul {
     font-size: 18px;
     font-weight: 500;
     text-decoration: none; }
-  .header__menu .header__link {
-    margin-right: 52px; }
+  .header__menu .header__items {
+    margin-right: 102px; }
   .header__tools {
-    align-items: center;
+    align-items: flex-end;
     display: flex;
     list-style: none; }
+  .header__tools .header__items {
+    margin-right: 70px; }
+    .header__tools .header__items:last-child {
+      margin-right: 34px; }
+  .header__items-image {
+    height: auto;
+    width: 23px; }
+  @media (max-width: 1660px) {
+    .header__logo img {
+      margin-left: 0; }
+    .header__menu .header__items {
+      margin-right: 50px; }
+    .header__tools .header__items {
+      margin-right: 35px; }
+      .header__tools .header__items:last-child {
+        margin-right: 0px; } }
+  @media (max-width: 1399.98px) {
+    .header__logo img {
+      width: 150px; }
+    .header__menu .header__items {
+      margin-right: 40px; }
+    .header__tools .header__items {
+      margin-right: 25px; } }
+
+@media (min-width: 1660px) {
+  .container {
+    max-width: 1920px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -27,7 +27,7 @@ const HeaderDown = () => {
 
   return (
     <div className="header__down">
-      <div className="container header__down-container">
+      <div className="container header__container">
         <Link href={routes.home}>
           <figure className="header__logo">
             <Image
