@@ -38,22 +38,29 @@ export const headerData = {
     {
       id: v4(),
       text: "Iniciar sesion",
+      url: "/",
     },
     {
       id: v4(),
       text: "Reserva",
+      url: "/",
     },
     {
       id: v4(),
       text: "ES",
+      url: "/",
     },
     {
       id: v4(),
       image: heart,
+      alt: "heart",
+      url: "/",
     },
     {
       id: v4(),
       image: bag,
+      alt: "bag",
+      url: "/",
     },
   ],
 };

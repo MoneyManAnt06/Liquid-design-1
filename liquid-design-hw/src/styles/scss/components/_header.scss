@@ -1,2 +1,54 @@
 .header {
+    background-color: $bg-dark;
+    font-family: $font-primary;
+    width: 100%;
+
+    &__up {
+        padding-bottom: 12px;
+        padding-top: 11px;
+        &-text {
+            color: $text-light;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+
+    &__down {
+        align-items: center;
+        background-color: $bg-grey;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__row {
+        align-items: center;
+        display: flex;
+    }
+
+    &__links {
+        display: flex;
+        list-style: none;
+    }
+
+    &__link {
+        color: $text-light;
+        font-size: 18px;
+        font-weight: 500;
+
+        text-decoration: none;
+    }
+
+    &__menu &__link {
+        margin-right: 52px;
+    }
+
+    &__tools {
+        align-items: center;
+        display: flex;
+        list-style: none;
+    }
 }
