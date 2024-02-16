@@ -39,10 +39,6 @@ const HeaderDown = () => {
           </figure>
         </Link>
 
-        <label className="header-hamburger" htmlFor="menuCheck">
-          <FontAwesomeIcon icon={faBars} />
-        </label>
-
         <input
           type="checkbox"
           name="menuCheck"
@@ -57,9 +53,16 @@ const HeaderDown = () => {
             </ul>
           </nav>
         </div>
-        <ul className="header__tools">
-          {renderOptions(headerData.secondaryOptions)}
-        </ul>
+
+        <div className="header__menu-left d-flex">
+          <ul className="header__tools">
+            {renderOptions(headerData.secondaryOptions)}
+          </ul>
+
+          <label className="header__hamburger" htmlFor="menuCheck">
+            <FontAwesomeIcon icon={faBars} />
+          </label>
+        </div>
       </div>
     </div>
   );
