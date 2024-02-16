@@ -1,0 +1,15 @@
+.banner {
+    background-image: url("/banner.png");
+    // background-image: url($bg-image-hero);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 213px;
+    width: 100%;
+
+    &__button {
+        background: none;
+        border: none;
+        padding: none;
+    }
+}

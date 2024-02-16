@@ -9792,4 +9792,15 @@ ul {
   .container {
     max-width: 1920px; } }
 
+.banner {
+  background-image: url("/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 213px;
+  width: 100%; }
+  .banner__button {
+    background: none;
+    border: none;
+    padding: none; }
+
 /*# sourceMappingURL=main.css.map */
