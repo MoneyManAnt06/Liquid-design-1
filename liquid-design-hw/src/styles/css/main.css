@@ -9762,6 +9762,8 @@ ul {
       .header__tools > .header__items,
       .header__links > .header__items {
         margin-right: 0; }
+      .header__tools .header__items:first-child {
+        margin-bottom: 86px; }
       .header__tools .header__items:last-child {
         margin-right: 0; }
       .header__check:checked ~ .header__row,
