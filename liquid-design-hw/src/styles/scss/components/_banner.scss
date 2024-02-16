@@ -1,15 +1,29 @@
 .banner {
     background-image: url("/banner.png");
-    // background-image: url($bg-image-hero);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     height: 213px;
     width: 100%;
 
+    &__container {
+        height: 100%;
+    }
+    &__content {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 33px;
+    }
+
     &__button {
         background: none;
         border: none;
         padding: none;
+
+        img {
+            height: 10px;
+            width: 10px;
+        }
     }
 }
