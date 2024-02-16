@@ -30,7 +30,7 @@
         }
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         &--services {
             background-color: $bg-dark;
             &__container {
