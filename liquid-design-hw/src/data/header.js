@@ -56,11 +56,11 @@ export const headerData = {
       alt: "heart",
       url: "/",
     },
-    {
-      id: v4(),
-      image: bag,
-      alt: "bag",
-      url: "/",
-    },
   ],
+
+  button: {
+    id: v4(),
+    image: bag,
+    alt: "bag",
+  },
 };

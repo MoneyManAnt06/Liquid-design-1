@@ -1,7 +1,6 @@
 .header {
     background-color: $bg-dark;
     font-family: $font-primary;
-    position: relative;
     width: 100%;
 
     &__container {
@@ -52,6 +51,7 @@
     &__links {
         display: flex;
         list-style: none;
+        margin-right: 95px;
     }
 
     &__link {
@@ -70,13 +70,14 @@
         align-items: flex-end;
         display: flex;
         list-style: none;
+        margin-left: 80px;
     }
 
     &__tools &__items {
         margin-right: 70px;
 
         &:last-child {
-            margin-right: 34px;
+            margin-right: 90px;
         }
     }
 
@@ -87,7 +88,18 @@
         }
     }
 
-    @media (max-width: 1660px) {
+    &__button {
+        background: none;
+        border: none;
+    }
+
+    &__menu {
+        &-left {
+            right: 34px;
+        }
+    }
+
+    @media (max-width: $xxxl) {
         &__logo img {
             margin-left: 0;
         }
@@ -100,7 +112,21 @@
             margin-right: 35px;
 
             &:last-child {
-                margin-right: 0px;
+                margin-right: 40px;
+            }
+        }
+
+        &__links {
+            margin-right: 70px;
+        }
+
+        &__tools {
+            margin-left: 30px;
+        }
+
+        &__menu {
+            &-left {
+                right: 0;
             }
         }
     }
@@ -117,9 +143,20 @@
         &__tools &__items {
             margin-right: 25px;
         }
+
+        &__links {
+            margin-right: 30px;
+        }
     }
 
     @include media-breakpoint-down(xl) {
+        &__links {
+            margin-right: 20px;
+        }
+
+        &__tools {
+            margin-left: 0;
+        }
         &__link {
             font-size: 17px;
         }
@@ -137,13 +174,23 @@
         }
     }
 
-    @include media-breakpoint-down(lg) {
-        &__tools &__items {
-            display: none;
+    @include media-breakpoint-up(lg) {
+        &__container {
+            position: relative;
+        }
 
-            &:last-child {
-                display: block;
+        &__menu {
+            &-left {
+                position: absolute;
             }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        position: relative;
+
+        &__up {
+            display: none;
         }
 
         &__hamburger {
@@ -165,6 +212,10 @@
             }
         }
 
+        &__button {
+            padding: 0;
+        }
+
         &__menu {
             background-color: $bg-grey;
             height: 0;
@@ -178,6 +229,26 @@
             width: 100%;
         }
 
+        &__tools {
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                margin-right: 0;
+            }
+        }
+
+        &__tools > &__items,
+        &__links > &__items {
+            margin-right: 0;
+        }
+
+        &__tools &__items {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
         &__check:checked ~ &__row,
         &__check:checked ~ &__row > &__menu {
             height: 100vh;
@@ -185,8 +256,9 @@
             width: 100%;
         }
 
-        &__links &__items {
+        &__items {
             margin-bottom: 16px;
+            margin-right: 0;
         }
 
         &__link {
@@ -198,10 +270,14 @@
             margin-right: 0;
             position: absolute;
             right: 0;
-            top: 112px;
+            top: 68px;
             transition: height 0.3s ease;
             width: 100vw;
             z-index: 10;
+        }
+
+        &__menu {
+            flex-direction: column;
         }
     }
 }

@@ -27,7 +27,7 @@ const HeaderDown = () => {
 
   return (
     <div className="header__down">
-      <div className="container header__container">
+      <div className="container header__container position-lg-relative">
         <Link href={routes.home}>
           <figure className="header__logo">
             <Image
@@ -47,18 +47,26 @@ const HeaderDown = () => {
         />
 
         <div className="header__row">
-          <nav className="header__menu">
+          <nav className="header__menu d-flex">
             <ul className="header__links">
               {renderOptions(headerData.options)}
+            </ul>
+            <ul className="header__tools">
+              {renderOptions(headerData.secondaryOptions)}
             </ul>
           </nav>
         </div>
 
         <div className="header__menu-left d-flex">
-          <ul className="header__tools">
-            {renderOptions(headerData.secondaryOptions)}
-          </ul>
-
+          <button className="header__button">
+            <Image
+              className="header__items-image"
+              src={headerData.button.image}
+              alt={headerData.button.alt}
+              width="auto"
+              height="auto"
+            />
+          </button>
           <label className="header__hamburger" htmlFor="menuCheck">
             <FontAwesomeIcon icon={faBars} />
           </label>
