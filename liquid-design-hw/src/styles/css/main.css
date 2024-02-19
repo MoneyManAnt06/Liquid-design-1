@@ -9848,7 +9848,20 @@ ul {
         align-items: center;
         display: flex; }
         .tab--services__text span {
-          display: block; }
+          color: #a191b2;
+          display: block;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 26px; }
+        .tab--services__text::before {
+          background-image: url("/arrow.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          content: "";
+          height: 15px;
+          margin-right: 22px;
+          transform: rotate(180deg);
+          width: 5px; }
       .tab--services__row {
         margin-right: 5%;
         width: 145px; }

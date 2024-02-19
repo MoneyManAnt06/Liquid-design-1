@@ -45,7 +45,22 @@
                 align-items: center;
                 display: flex;
                 span {
+                    color: $tab-purple-text;
                     display: block;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 26px;
+                }
+
+                &::before {
+                    background-image: url($tab-arrow);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    content: "";
+                    height: 15px;
+                    margin-right: 22px;
+                    transform: rotate(180deg);
+                    width: 5px;
                 }
             }
 
