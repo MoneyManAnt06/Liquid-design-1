@@ -26,3 +26,18 @@ export const tabServicesData = [
     text: "Grupos",
   },
 ];
+
+export const tabGenderData = [
+  {
+    id: v4(),
+    text: "Mujer",
+  },
+  {
+    id: v4(),
+    text: "Hombre",
+  },
+  {
+    id: v4(),
+    text: "Niños/as",
+  },
+];

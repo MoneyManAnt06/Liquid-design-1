@@ -9816,7 +9816,10 @@ ul {
 .tab {
   font-family: "Raleway", sans-serif;
   width: 100%; }
-  .tab--services__button {
+  .tab__container {
+    display: flex;
+    justify-content: center; }
+  .tab__button {
     background: none;
     border: none;
     font-size: 16px;
@@ -9825,18 +9828,28 @@ ul {
     padding: 18px 0;
     text-align: center;
     width: 100%; }
-  .tab--services__item {
+  .tab__item {
     background: #ffffff;
     border: 1px solid #313131; }
-  .tab--services-active {
+  .tab-active {
     background: #313131; }
-    .tab--services-active button {
+    .tab-active button {
       color: #ffffff; }
-  .tab--services__text span {
-    color: #ffffff;
+  .tab__text {
     display: none; }
+    .tab__text span {
+      color: #ffffff; }
+  .tab__row, .tab--gender__row {
+    width: 100%; }
+  .tab--gender__button {
+    color: #a191b2; }
+  .tab--gender__item {
+    border: 1px solid #a191b2; }
+  .tab--gender-active {
+    background: #9581aa;
+    border: 1px solid #a191b2; }
   @media (max-width: 575.98px) {
-    .tab--services {
+    .tab {
       background-color: #000000; }
       .tab--services__container {
         display: flex;
@@ -9879,6 +9892,10 @@ ul {
         padding: 0;
         width: 6px; }
         .tab--services__button span {
-          display: none; } }
+          display: none; }
+      .tab--gender__button {
+        font-size: 14px;
+        padding-bottom: 14px;
+        padding-top: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

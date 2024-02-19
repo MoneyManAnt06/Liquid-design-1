@@ -11,11 +11,14 @@ const TabServices = () => {
       return (
         <div
           key={service.id}
-          className={`col-2 tab--services__item ${
-            active === service.text && "tab--services-active"
+          className={`col-2 tab__item tab--services__item ${
+            active === service.text && "tab-active tab--services-active"
           }`}
         >
-          <button className="tab--services__button" onClick={handleActive}>
+          <button
+            className="tab__button tab--services__button"
+            onClick={handleActive}
+          >
             <span>{service.text}</span>
           </button>
         </div>
@@ -24,11 +27,11 @@ const TabServices = () => {
 
   return (
     <div className="tab tab--services">
-      <div className="tab--services__container">
-        <div className="tab--services__text">
+      <div className="tab__container tab--services__container">
+        <div className="tab__text tab--services__text">
           <span className>{active}</span>
         </div>
-        <div className="row tab--services__row">{renderTabs()}</div>
+        <div className="row tab__row tab--services__row">{renderTabs()}</div>
       </div>
     </div>
   );

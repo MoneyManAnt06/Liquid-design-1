@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import TabGender from "@/components/TabGender";
 import TabServices from "@/components/TabServices";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Banner />
       <TabServices />
+      <TabGender />
     </>
   );
 }
