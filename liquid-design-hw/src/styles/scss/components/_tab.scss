@@ -56,8 +56,40 @@
         }
     }
 
+    &--services {
+        margin-bottom: 37px;
+        &__row {
+            justify-content: center;
+        }
+
+        &__item {
+            border: none;
+            max-width: 155px;
+        }
+
+        &__active button {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            &::after {
+                border: 2px solid #9581aa;
+                bottom: 0;
+                content: "";
+                position: absolute;
+
+                width: 80%;
+            }
+        }
+    }
+
     @include media-breakpoint-down(sm) {
         background-color: $bg-dark;
+
+        &__button {
+            font-size: 14px;
+        }
+
         &--categories {
             &__container {
                 display: flex;
@@ -122,10 +154,13 @@
 
         &--gender {
             &__button {
-                font-size: 14px;
                 padding-bottom: 14px;
                 padding-top: 15px;
             }
+        }
+
+        &--services {
+            background-color: $bg-light;
         }
     }
 }

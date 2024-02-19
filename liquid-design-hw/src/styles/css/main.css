@@ -9848,9 +9848,28 @@ ul {
   .tab--gender-active {
     background: #9581aa;
     border: 1px solid #a191b2; }
+  .tab--services {
+    margin-bottom: 37px; }
+    .tab--services__row {
+      justify-content: center; }
+    .tab--services__item {
+      border: none;
+      max-width: 155px; }
+    .tab--services__active button {
+      display: flex;
+      justify-content: center;
+      position: relative; }
+      .tab--services__active button::after {
+        border: 2px solid #9581aa;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        width: 80%; }
   @media (max-width: 575.98px) {
     .tab {
       background-color: #000000; }
+      .tab__button {
+        font-size: 14px; }
       .tab--categories__container {
         display: flex;
         justify-content: space-between;
@@ -9894,8 +9913,9 @@ ul {
         .tab--categories__button span {
           display: none; }
       .tab--gender__button {
-        font-size: 14px;
         padding-bottom: 14px;
-        padding-top: 15px; } }
+        padding-top: 15px; }
+      .tab--services {
+        background-color: #ffffff; } }
 
 /*# sourceMappingURL=main.css.map */

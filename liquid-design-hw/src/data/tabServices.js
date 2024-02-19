@@ -41,3 +41,24 @@ export const tabGenderData = [
     text: "Niños/as",
   },
 ];
+
+export const tabServicesData = [
+  {
+    id: v4(),
+    text: "Peinado",
+  },
+  {
+    id: v4(),
+    text: "Tratamientos",
+  },
+
+  {
+    id: v4(),
+    text: "Corte",
+  },
+
+  {
+    id: v4(),
+    text: "Coloracion",
+  },
+];
