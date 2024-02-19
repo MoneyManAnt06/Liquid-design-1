@@ -11,7 +11,7 @@ const TabServices = () => {
       return (
         <div
           key={service.id}
-          className={`col-2 tab__item tab--services__item ${
+          className={`col-4 tab__item tab--services__item ${
             active === service.text && "tab--services__active"
           }`}
         >

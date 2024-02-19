@@ -83,6 +83,14 @@
         }
     }
 
+    @include media-breakpoint-down(md) {
+        &--services {
+            &__item {
+                max-width: 140px;
+            }
+        }
+    }
+
     @include media-breakpoint-down(sm) {
         background-color: $bg-dark;
 
@@ -161,6 +169,10 @@
 
         &--services {
             background-color: $bg-light;
+
+            &__item:last-child {
+                display: none;
+            }
         }
     }
 }

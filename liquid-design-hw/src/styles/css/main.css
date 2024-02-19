@@ -9865,6 +9865,9 @@ ul {
         content: "";
         position: absolute;
         width: 80%; }
+  @media (max-width: 767.98px) {
+    .tab--services__item {
+      max-width: 140px; } }
   @media (max-width: 575.98px) {
     .tab {
       background-color: #000000; }
@@ -9916,6 +9919,8 @@ ul {
         padding-bottom: 14px;
         padding-top: 15px; }
       .tab--services {
-        background-color: #ffffff; } }
+        background-color: #ffffff; }
+        .tab--services__item:last-child {
+          display: none; } }
 
 /*# sourceMappingURL=main.css.map */
