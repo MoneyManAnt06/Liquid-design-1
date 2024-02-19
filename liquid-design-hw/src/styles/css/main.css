@@ -9851,22 +9851,22 @@ ul {
   @media (max-width: 575.98px) {
     .tab {
       background-color: #000000; }
-      .tab--services__container {
+      .tab--categories__container {
         display: flex;
         justify-content: space-between;
         padding: 0 5%;
         padding-bottom: 16px;
         padding-top: 14px; }
-      .tab--services__text {
+      .tab--categories__text {
         align-items: center;
         display: flex; }
-        .tab--services__text span {
+        .tab--categories__text span {
           color: #a191b2;
           display: block;
           font-size: 14px;
           font-weight: 500;
           line-height: 26px; }
-        .tab--services__text::before {
+        .tab--categories__text::before {
           background-image: url("/arrow.png");
           background-repeat: no-repeat;
           background-size: cover;
@@ -9875,23 +9875,23 @@ ul {
           margin-right: 22px;
           transform: rotate(180deg);
           width: 5px; }
-      .tab--services__row {
+      .tab--categories__row {
         margin-right: 5%;
         width: 145px; }
-      .tab--services__item {
+      .tab--categories__item {
         background: none;
         border: none; }
-        .tab--services__item button {
+        .tab--categories__item button {
           background-color: #313131; }
-      .tab--services-active button {
+      .tab--categories-active button {
         background-color: #9581aa; }
-      .tab--services__button {
+      .tab--categories__button {
         background-color: #313131;
         border-radius: 50%;
         height: 6px;
         padding: 0;
         width: 6px; }
-        .tab--services__button span {
+        .tab--categories__button span {
           display: none; }
       .tab--gender__button {
         font-size: 14px;

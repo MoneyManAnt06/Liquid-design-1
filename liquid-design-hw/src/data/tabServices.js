@@ -1,6 +1,6 @@
 import { v4 } from "uuid";
 
-export const tabServicesData = [
+export const tabCategoriesData = [
   {
     id: v4(),
     text: "Peluqueria",

@@ -58,7 +58,7 @@
 
     @include media-breakpoint-down(sm) {
         background-color: $bg-dark;
-        &--services {
+        &--categories {
             &__container {
                 display: flex;
                 justify-content: space-between;
