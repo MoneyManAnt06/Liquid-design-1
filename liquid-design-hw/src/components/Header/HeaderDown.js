@@ -4,6 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import Dropdown from "../Dropdown";
 
 const HeaderDown = () => {
   const renderOptions = (options) =>
@@ -49,6 +50,10 @@ const HeaderDown = () => {
         <div className="header__row">
           <nav className="header__menu d-flex">
             <ul className="header__links">
+              <li className="header__items header__dropdown">
+                {headerData.dropdown.text}
+                <Dropdown options={headerData.dropdown.options} />
+              </li>
               {renderOptions(headerData.options)}
             </ul>
             <ul className="header__tools">

@@ -6,14 +6,18 @@ const Dropdown = (props) => {
 
   const renderOptions = () =>
     options.map((option) => (
-      <li key={option.id}>
+      <li className="dropdown__item" key={option.id}>
         <Link href={option.url} className="dropdown__option">
           {option.text}
         </Link>
       </li>
     ));
 
-  return <ul className="dropdown">{renderOptions()}</ul>;
+  return (
+    <div className="dropdown">
+      <ul className="dropdown__links">{renderOptions()}</ul>
+    </div>
+  );
 };
 
 Dropdown.propTypes = {

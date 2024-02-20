@@ -54,7 +54,8 @@
         margin-right: 95px;
     }
 
-    &__link {
+    &__link,
+    &__dropdown {
         color: $text-light;
         font-size: 18px;
         font-weight: 500;
@@ -64,6 +65,12 @@
 
     &__menu &__items {
         margin-right: 102px;
+
+        &:first-child {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
     }
 
     &__tools {
@@ -96,6 +103,14 @@
     &__menu {
         &-left {
             right: 34px;
+        }
+    }
+
+    &__dropdown {
+        &:hover {
+            div {
+                display: flex;
+            }
         }
     }
 
@@ -282,6 +297,17 @@
 
         &__menu {
             flex-direction: column;
+        }
+
+        &__dropdown {
+            align-items: center;
+            flex-direction: column;
+            &:hover {
+                div {
+                    height: 100%;
+                    transition: height 0.3s ease-in-out;
+                }
+            }
         }
     }
 }

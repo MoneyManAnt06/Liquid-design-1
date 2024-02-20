@@ -6,12 +6,32 @@ import bag from "@/assets/images/bag.png";
 export const headerData = {
   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   logo: headerLogo,
+  dropdown: {
+    text: "Servicios",
+    options: [
+      {
+        id: v4(),
+        text: "Peluqueria",
+        url: "/",
+      },
+      {
+        id: v4(),
+        text: "Maquillaje",
+        url: "/",
+      },
+      {
+        id: v4(),
+        text: "Uñas",
+        url: "/",
+      },
+      {
+        id: v4(),
+        text: "Estética",
+        url: "/",
+      },
+    ],
+  },
   options: [
-    {
-      id: v4(),
-      text: "Servicios",
-      url: "/",
-    },
     {
       id: v4(),
       text: "Productos",

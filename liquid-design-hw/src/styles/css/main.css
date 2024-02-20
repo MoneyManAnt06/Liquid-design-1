@@ -9663,13 +9663,17 @@ ul {
     display: flex;
     list-style: none;
     margin-right: 95px; }
-  .header__link {
+  .header__link, .header__dropdown {
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
     text-decoration: none; }
   .header__menu .header__items {
     margin-right: 102px; }
+    .header__menu .header__items:first-child {
+      display: flex;
+      justify-content: center;
+      position: relative; }
   .header__tools {
     align-items: flex-end;
     display: flex;
@@ -9687,6 +9691,8 @@ ul {
     border: none; }
   .header__menu-left {
     right: 34px; }
+  .header__dropdown:hover div {
+    display: flex; }
   @media (max-width: 1790px) {
     .header__logo img {
       margin-left: 0; }
@@ -9786,7 +9792,13 @@ ul {
         width: 100vw;
         z-index: 10; }
       .header__menu {
-        flex-direction: column; } }
+        flex-direction: column; }
+      .header__dropdown {
+        align-items: center;
+        flex-direction: column; }
+        .header__dropdown:hover div {
+          height: 100%;
+          transition: height 0.3s ease-in-out; } }
 
 @media (min-width: 1790px) {
   .container {
@@ -9922,5 +9934,51 @@ ul {
         background-color: #ffffff; }
         .tab--services__item:last-child {
           display: none; } }
+
+.dropdown {
+  background-color: transparent;
+  display: none;
+  font-family: "Raleway", sans-serif;
+  padding-top: 55px;
+  top: 0;
+  width: 210px; }
+  .dropdown__links {
+    align-items: center;
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%; }
+  .dropdown__item {
+    padding-bottom: 12px;
+    padding-top: 15px;
+    width: 100%; }
+    .dropdown__item:hover {
+      background-color: #000000;
+      cursor: pointer; }
+  .dropdown__option {
+    color: #ffffff;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none; }
+  @media (max-width: 1399.98px) {
+    .dropdown {
+      width: 180px; } }
+  @media (max-width: 1399.98px) {
+    .dropdown {
+      width: 155px; } }
+  @media (min-width: 992px) {
+    .dropdown {
+      position: relative; } }
+  @media (max-width: 991.98px) {
+    .dropdown {
+      height: 0;
+      padding-top: 5px;
+      transition: height 0.3s ease-in-out;
+      width: 100vw; }
+      .dropdown__links {
+        background-color: #000000; } }
 
 /*# sourceMappingURL=main.css.map */
