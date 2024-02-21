@@ -4,6 +4,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
@@ -9708,6 +9709,9 @@ ul {
       margin-left: 30px; }
     .header__menu-left {
       right: 0; } }
+  @media (min-width: 1790px) {
+    .header__container {
+      max-width: 1920px; } }
   @media (max-width: 1399.98px) {
     .header__logo img {
       width: 150px; }
@@ -9799,10 +9803,6 @@ ul {
         .header__dropdown:hover div {
           height: 100%;
           transition: height 0.3s ease-in-out; } }
-
-@media (min-width: 1790px) {
-  .container {
-    max-width: 1920px; } }
 
 .banner {
   background-image: url("/banner.png");
@@ -9981,9 +9981,11 @@ ul {
       .dropdown__links {
         background-color: #000000; } }
 
-@media (max-width: 575.98px) {
-  .services__container {
-    padding: 0 26px; } }
+.services {
+  margin-bottom: 159px; }
+  @media (max-width: 575.98px) {
+    .services__container {
+      padding: 0 26px; } }
 
 .card {
   border: 1px solid #d0d0d0;
@@ -10054,5 +10056,24 @@ ul {
       font-size: 14px;
       font-weight: bold;
       line-height: 18px; }
+  .card--extra .card__time {
+    margin-bottom: 32px; }
+  .card--extra .card__content {
+    padding-top: 28px; }
+
+.extras__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.extras__title {
+  color: #a191b2;
+  font-family: "Cormorant Infant", serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 48px;
+  text-align: center;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */

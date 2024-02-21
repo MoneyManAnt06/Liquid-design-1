@@ -91,4 +91,12 @@
             line-height: 18px;
         }
     }
+
+    &--extra &__time {
+        margin-bottom: 32px;
+    }
+
+    &--extra &__content {
+        padding-top: 28px;
+    }
 }

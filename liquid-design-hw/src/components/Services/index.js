@@ -16,6 +16,7 @@ const Services = () => {
         />
       </div>
     ));
+
   return (
     <section className="services">
       <div className="container services__container">

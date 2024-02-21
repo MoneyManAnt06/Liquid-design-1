@@ -3,16 +3,17 @@ import PropTypes from "prop-types";
 import { CiStopwatch } from "react-icons/ci";
 
 const Card = ({
+  customClass = "",
   image = "",
   altImage = "",
   title,
   time,
-  description,
+  description = "",
   clasicPrice,
   elitePrice,
 }) => {
   return (
-    <article className="card">
+    <article className={`card ${customClass}`}>
       {altImage.length > 0 && (
         <Image
           className="card__image"
@@ -29,7 +30,9 @@ const Card = ({
           <CiStopwatch className="card__time-icon" />
           <span>{time} minutos</span>
         </div>
-        <p className="card__description">{description}</p>
+        {description.length > 0 && (
+          <p className="card__description">{description}</p>
+        )}
         <span className="card__info">Más info</span>
       </div>
       <div className="card__footer">
@@ -47,11 +50,12 @@ const Card = ({
 };
 
 Card.propTypes = {
+  customClass: PropTypes.string,
   image: PropTypes.string,
   altImage: PropTypes.string,
   title: PropTypes.string.isRequired,
   time: PropTypes.number.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   clasicPrice: PropTypes.string.isRequired,
   elitePrice: PropTypes.string.isRequired,
 };
