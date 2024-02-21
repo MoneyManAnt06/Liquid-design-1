@@ -9981,4 +9981,78 @@ ul {
       .dropdown__links {
         background-color: #000000; } }
 
+@media (max-width: 575.98px) {
+  .services__container {
+    padding: 0 26px; } }
+
+.card {
+  border: 1px solid #d0d0d0;
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto 20px;
+  max-width: 365px;
+  width: 100%; }
+  .card__image {
+    height: auto;
+    margin-bottom: 22px;
+    width: 100%; }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    padding-right: 24px; }
+  .card__title {
+    color: #313131;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 14px;
+    min-height: 52px; }
+  .card__time {
+    align-items: center;
+    display: flex;
+    margin-bottom: 12px; }
+    .card__time span {
+      font-family: "Raleway", sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 16px; }
+    .card__time-icon {
+      color: #a191b2;
+      font-size: 14px;
+      margin-right: 8px; }
+  .card__description {
+    color: #a191b2;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 7px; }
+  .card__info {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px; }
+  .card__footer {
+    border-top: 1px solid #d0d0d0;
+    display: flex;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    width: 100%; }
+    .card__footer-item {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%; }
+      .card__footer-item:first-child {
+        border-right: 1px solid #d0d0d0; }
+    .card__footer-text {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 16px;
+      margin-bottom: 2px; }
+    .card__footer-price {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 18px; }
+
 /*# sourceMappingURL=main.css.map */

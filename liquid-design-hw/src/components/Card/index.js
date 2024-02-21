@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import PropTypes from "prop-types";
 import { CiStopwatch } from "react-icons/ci";
@@ -14,7 +13,7 @@ const Card = ({
 }) => {
   return (
     <article className="card">
-      {image.length > 0 && (
+      {altImage.length > 0 && (
         <Image
           className="card__image"
           src={image}
@@ -26,21 +25,21 @@ const Card = ({
 
       <div className="card__content">
         <h3 className="card__title">{title}</h3>
-        <span className="card__time">
-          <FontAwesomeIcon className="card__time-icon" icon={CiStopwatch} />
-          {time}
-        </span>
+        <div className="card__time">
+          <CiStopwatch className="card__time-icon" />
+          <span>{time} minutos</span>
+        </div>
         <p className="card__description">{description}</p>
         <span className="card__info">Más info</span>
       </div>
       <div className="card__footer">
         <div className="card__footer-item">
-          <span>Clasic</span>
-          <span>{clasicPrice}</span>
+          <span className="card__footer-text">Clasic</span>
+          <span className="card__footer-price">{clasicPrice}</span>
         </div>
         <div className="card__footer-item">
-          <span>Élite</span>
-          <span>{elitePrice}</span>
+          <span className="card__footer-text">Élite</span>
+          <span className="card__footer-price">{elitePrice}</span>
         </div>
       </div>
     </article>
