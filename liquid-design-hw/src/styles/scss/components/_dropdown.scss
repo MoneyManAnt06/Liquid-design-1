@@ -1,0 +1,59 @@
+.dropdown {
+    background-color: transparent;
+    display: none;
+    font-family: $font-primary;
+    padding-top: 55px;
+    top: 0;
+    width: 210px;
+
+    &__links {
+        align-items: center;
+        background-color: $bg-grey;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 100%;
+    }
+
+    &__item {
+        padding-bottom: 12px;
+        padding-top: 15px;
+        width: 100%;
+        &:hover {
+            background-color: $bg-dark;
+            cursor: pointer;
+        }
+    }
+
+    &__option {
+        color: $text-light;
+        display: block;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        width: 180px;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        width: 155px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        position: relative;
+    }
+
+    @include media-breakpoint-down(lg) {
+        height: 0;
+        padding-top: 5px;
+        transition: height 0.3s ease-in-out;
+        width: 100vw;
+
+        &__links {
+            background-color: $bg-dark;
+        }
+    }
+}

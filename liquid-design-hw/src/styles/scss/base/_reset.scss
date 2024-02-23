@@ -1,1 +1,11 @@
-@import "../../../../node_modules/bootstrap/scss/reboot"
+@import "../../../../node_modules/bootstrap/scss/reboot";
+
+h1,
+h2,
+h3,
+p,
+figure,
+ul {
+    margin: 0;
+    padding: 0;
+}
