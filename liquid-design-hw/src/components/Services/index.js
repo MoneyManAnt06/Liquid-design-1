@@ -4,7 +4,7 @@ import ServicesCard from "./ServicesCard";
 const Services = () => {
   const renderServices = () =>
     services.map((service) => (
-      <div key={service.id} className="col-12 col-lg-4">
+      <div key={service.id} className="col-12 col-md-6 col-lg-4">
         <ServicesCard
           image={service.image}
           altImage="rectangle"
