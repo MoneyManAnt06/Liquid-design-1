@@ -1,0 +1,35 @@
+.Footer{
+    background-color: $grey;
+
+    &-lists{
+        &-container{
+            display: flex;
+            color: $white;
+            gap: 150px;
+            justify-content: center;
+        }
+
+        &-items{
+            list-style: none;
+            padding: 0;
+        }
+    }
+
+    &-titles{
+        min-width: 197px;
+        width: 100%;
+        max-height: 39px;
+        height: 100%;
+        margin-bottom: 35px;
+    }
+
+    &-newsletter{
+        color: $white;
+          }
+
+    @media (min-width: 1625px) {
+        &-content{
+            max-width: 1920px;
+        }
+    }
+}
