@@ -1,6 +1,35 @@
-$White: #FFFFFF;
-$Grey: #313131;
-$LightPurple: #A191B2;
-$Black: #000000;
-$TabPruple: #9581AA;
-$Red: #D8624C;
+$white: #FFFFFF;
+$grey: #313131;
+$purple-light: #A191B2;
+$black: #000000;
+$pruple-tab: #9581AA;
+$red: #D8624C;
+$grey-light: #D0D0D0;
+// font
+$font-primary: "Raleway", sans-serif;
+$font-secondary: "Cormorant Infant", serif;
+// text
+$text-light: $white;
+$text-grey: $grey;
+// borders
+$br-grey: $grey;
+// backgrounds
+$bg-dark: $black;
+$bg-grey: $grey;
+$bg-light: $white;
+$bg-purple: $pruple-tab;
+// tab
+$tab-purple-text: $purple-light;
+$tab-arrow: "/arrow.png";
+$tab-border: $purple-light;
+// card
+$card-icon: $purple-light;
+$card-description: $purple-light;
+$card-border: $grey-light;
+// extras
+$extras-text: $purple-light;
+// breakpoints
+$xxxl: 1790px;
+
+//my new variables 
+$copyright-background-color: $black

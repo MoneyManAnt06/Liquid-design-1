@@ -9615,6 +9615,44 @@ progress {
 [hidden] {
   display: none !important; }
 
+.Footer {
+  background-color: #313131; }
+  .Footer-lists-container {
+    display: flex;
+    color: #FFFFFF;
+    gap: 150px;
+    justify-content: center; }
+  .Footer-lists-items {
+    list-style: none;
+    padding: 0; }
+  .Footer-titles {
+    min-width: 197px;
+    width: 100%;
+    max-height: 39px;
+    height: 100%;
+    margin-bottom: 35px; }
+  .Footer-newsletter {
+    color: #FFFFFF; }
+  @media (min-width: 1625px) {
+    .Footer-content {
+      max-width: 1920px; } }
+
+.Footer-app {
+  display: flex;
+  flex-direction: column; }
+  .Footer-app-title {
+    margin-bottom: 42px;
+    min-width: 197px;
+    width: 100%;
+    max-height: 39px;
+    height: 100%; }
+
+.CopyRight {
+  background-color: #000000;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between; }
+
 .bg {
   background-color: red; }
 
