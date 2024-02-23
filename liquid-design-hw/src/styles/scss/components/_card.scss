@@ -1,0 +1,102 @@
+.card {
+    border: 1px solid $card-border;
+    font-family: $font-primary;
+    margin: 0 auto 20px;
+    max-width: 365px;
+    width: 100%;
+
+    &__image {
+        height: auto;
+        margin-bottom: 22px;
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        padding-left: 18px;
+        padding-right: 24px;
+    }
+
+    &__title {
+        color: $text-grey;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 14px;
+        min-height: 52px;
+    }
+
+    &__time {
+        align-items: center;
+        display: flex;
+        margin-bottom: 12px;
+        span {
+            font-family: $font-primary;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 16px;
+        }
+
+        &-icon {
+            color: $card-icon;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+    }
+
+    &__description {
+        color: $card-description;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+        margin-bottom: 7px;
+    }
+
+    &__info {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 18px;
+    }
+
+    &__footer {
+        border-top: 1px solid $card-border;
+        display: flex;
+        padding-bottom: 14px;
+        padding-top: 14px;
+        width: 100%;
+        &-item {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+
+            &:first-child {
+                border-right: 1px solid $card-border;
+            }
+        }
+
+        &-text {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 16px;
+            margin-bottom: 2px;
+        }
+
+        &-price {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 18px;
+        }
+    }
+
+    &--extra &__time {
+        margin-bottom: 32px;
+    }
+
+    &--extra &__content {
+        padding-top: 28px;
+    }
+}

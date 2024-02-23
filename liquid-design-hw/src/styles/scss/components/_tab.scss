@@ -1,0 +1,178 @@
+.tab {
+    font-family: $font-primary;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        background: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        padding: 18px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__item {
+        background: $bg-light;
+        border: 1px solid $br-grey;
+    }
+
+    &-active {
+        background: $bg-grey;
+        button {
+            color: $text-light;
+        }
+    }
+
+    &__text {
+        display: none;
+        span {
+            color: $text-light;
+        }
+    }
+
+    &__row,
+    &--gender__row {
+        width: 100%;
+    }
+
+    &--gender {
+        &__button {
+            color: $tab-purple-text;
+        }
+        &__item {
+            border: 1px solid $tab-border;
+        }
+
+        &-active {
+            background: $bg-purple;
+            border: 1px solid $tab-border;
+        }
+    }
+
+    &--services {
+        margin-bottom: 37px;
+        &__row {
+            justify-content: center;
+        }
+
+        &__item {
+            border: none;
+            max-width: 155px;
+        }
+
+        &__active button {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            &::after {
+                border: 2px solid #9581aa;
+                bottom: 0;
+                content: "";
+                position: absolute;
+
+                width: 80%;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &--services {
+            &__item {
+                max-width: 140px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        background-color: $bg-dark;
+
+        &__button {
+            font-size: 14px;
+        }
+
+        &--categories {
+            &__container {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 5%;
+                padding-bottom: 16px;
+                padding-top: 14px;
+            }
+
+            &__text {
+                align-items: center;
+                display: flex;
+                span {
+                    color: $tab-purple-text;
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 26px;
+                }
+
+                &::before {
+                    background-image: url($tab-arrow);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    content: "";
+                    height: 15px;
+                    margin-right: 22px;
+                    transform: rotate(180deg);
+                    width: 5px;
+                }
+            }
+
+            &__row {
+                margin-right: 5%;
+                width: 145px;
+            }
+
+            &__item {
+                background: none;
+                border: none;
+
+                button {
+                    background-color: $bg-grey;
+                }
+            }
+
+            &-active button {
+                background-color: $bg-purple;
+            }
+
+            &__button {
+                background-color: $bg-grey;
+                border-radius: 50%;
+                height: 6px;
+                padding: 0;
+                width: 6px;
+                span {
+                    display: none;
+                }
+            }
+        }
+
+        &--gender {
+            &__button {
+                padding-bottom: 14px;
+                padding-top: 15px;
+            }
+        }
+
+        &--services {
+            background-color: $bg-light;
+
+            &__item:last-child {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+$white: #ffffff;
+$grey: #313131;
+$purple-light: #a191b2;
+$black: #000000;
+$pruple-tab: #9581aa;
+$red: #d8624c;
+$grey-light: #d0d0d0;
+
+// font
+$font-primary: "Raleway", sans-serif;
+$font-secondary: "Cormorant Infant", serif;
+// text
+$text-light: $white;
+$text-grey: $grey;
+
+// borders
+$br-grey: $grey;
+
+// backgrounds
+$bg-dark: $black;
+$bg-grey: $grey;
+$bg-light: $white;
+$bg-purple: $pruple-tab;
+
+// tab
+$tab-purple-text: $purple-light;
+$tab-arrow: "/arrow.png";
+$tab-border: $purple-light;
+
+// card
+$card-icon: $purple-light;
+$card-description: $purple-light;
+$card-border: $grey-light;
+
+// extras
+$extras-text: $purple-light;
+
+// breakpoints
+
+$xxxl: 1790px;

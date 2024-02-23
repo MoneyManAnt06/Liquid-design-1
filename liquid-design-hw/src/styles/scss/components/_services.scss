@@ -1,0 +1,8 @@
+.services {
+    margin-bottom: 159px;
+    @include media-breakpoint-down(sm) {
+        &__container {
+            padding: 0 26px;
+        }
+    }
+}
