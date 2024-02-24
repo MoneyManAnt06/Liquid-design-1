@@ -1,35 +1,256 @@
 .Footer{
     background-color: $grey;
 
+    &-content{
+        padding: 0;
+    }
+
+    &-padding{
+        padding: 97px 168px 64px;
+    }
+
+    &-form{
+        display: flex;
+    }
+
     &-lists{
+        max-width: 197px;
+        width: 100%;
+
         &-container{
             display: flex;
             color: $white;
             gap: 150px;
             justify-content: center;
+            margin-bottom: 123px;
         }
 
         &-items{
             list-style: none;
             padding: 0;
+            display: flex;
+            gap: 17px;
+            flex-direction: column;
         }
     }
 
     &-titles{
-        min-width: 197px;
         width: 100%;
         max-height: 39px;
         height: 100%;
         margin-bottom: 35px;
+        font-size: 30px;
+        font-family: $font-primary;
+        font-weight: 300;
+    }
+
+    &-icons{
+        font-size: 27px;
+        display: flex;
+        gap: 35px;
     }
 
     &-newsletter{
         color: $white;
-          }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title{
+            margin-right: 20px;
+            font-size: 30px;
+            font-family: $font-primary;
+            font-weight: 400;
+        }
+    }
+
+    &-info{
+        display: flex;
+    }
+
+    &-input{
+        padding: 14px 71px 14px 19px;
+        font-family: $font-primary;
+        font-size: 14px;
+        font-weight: 300;
+        background-color: transparent;
+        border: 1px solid $white;
+        line-height: 15px;
+        
+        &::placeholder{
+            color: $white;
+        }
+
+        &-2{
+            border-right: none;
+            margin-left: 20px;
+        }
+
+
+        &-button{
+            background-color: $input-background-color;
+            padding: 13px 19px 14px 17px;
+            color: $white;
+        }
+    }
+    
+    &-card-payments{
+        max-width: 260px;
+        width: 100%;
+        height: auto;
+    }
+
 
     @media (min-width: 1625px) {
         &-content{
             max-width: 1920px;
+        }
+    }
+    
+    @media (max-width: 1625px) {
+        &-content{
+            max-width: none;
+        }
+
+        &-lists{
+            &-container{
+                gap: 80px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        &-padding{
+            padding: 97px 80px 64px;
+        }
+
+        &-lists{
+            &-container{
+                gap: 40px;
+            }
+        }
+
+        &-titles{
+            font-size: 22px;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-padding{
+            padding: 97px 30px 64px;
+        }
+
+        &-container{
+            width: auto;
+        }
+
+        &-lists{
+            &:nth-child(2){
+                max-width: 140px;
+            }
+
+            &-container{
+                gap: 0;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+
+        &-newsletter{
+            &-title{
+                font-size: 28px;
+            }
+        }
+    
+        &-input{
+            padding-right: 45px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-newsletter{
+            flex-direction: column;
+
+            &-title{
+                margin: 0 0 29px;
+            }
+        }
+
+        &-lists{
+            max-width: 350px;
+
+            &:nth-child(2){
+                max-width: 350px;
+            }
+
+            max-height: 29px;
+            width: 100%;
+
+            &-container{
+                margin: 0 auto 109px;
+                gap: 33px;
+                max-width: 350px;
+            }
+
+            &-items{
+                display: none;
+            }
+        }
+        &-padding{
+            padding: 37px 36px 44px;
+        }
+
+        &-info{
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 42px;
+            align-items: center;
+        }
+
+        &-titles{
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 5px;
+            max-width: 350px;
+        }
+
+        &-input{
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &-button-container{
+            display: flex;
+            width: 100%;
+        }
+
+        &-form{
+            flex-direction: column;
+            gap: 4px;
+            max-width: 370px;
+            width: 100%;
+        }
+
+        &-container{
+            display: flex;
+            max-height: 29px;
+            max-width: 350px;
+            width: 100%;
+        }
+
+ 
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-container{
+            max-width: 308px;
+            width: 100%;
+        }
+
+        &-icons{
+            font-size: 22px;
+            gap: 15px;
         }
     }
 }

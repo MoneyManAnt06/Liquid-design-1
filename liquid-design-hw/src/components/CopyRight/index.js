@@ -5,7 +5,7 @@ import ShopLogo from "@/assets/images/shoplogo.png"
 const CopyRight = ({text='', text2='', }) => {
   return (
     <div className='CopyRight'>
-        <span>{text}</span>
+        <span className='CopyRight-text'>{text}</span>
         <div>
             {text2}
             <Image src={ShopLogo} alt='Shop Logo' width='auto' height='auto' />

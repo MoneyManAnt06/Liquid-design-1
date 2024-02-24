@@ -5,9 +5,9 @@ import { FaInstagram } from "react-icons/fa";
 
 const FooterFollowers = ({title=''}) => {
   return (
-    <div>
+    <div className='Footer-container'>
        <h3 className='Footer-titles'>{title}</h3>
-       <div>
+       <div className='Footer-icons'>
             <FaTwitter />
             <FaFacebookF />
             <FaInstagram />

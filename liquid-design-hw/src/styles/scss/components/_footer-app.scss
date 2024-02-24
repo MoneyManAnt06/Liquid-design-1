@@ -1,12 +1,52 @@
 .Footer-app{
     display: flex;
     flex-direction: column;
+    
 
     &-title{
         margin-bottom: 42px;
-        min-width: 197px;
         width: 100%;
         max-height: 39px;
         height: 100%;
+    }
+    
+    &-image{
+        &-container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-image{
+            width: 144px;
+            height: auto;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+
+        &-title{
+            margin-bottom: 24px;
+            font-size: 18px;
+        }
+
+        &-image{
+            &-container{
+                flex-direction: row;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        max-width: 350%;
+        width: 100%;
+
+        &-image{
+            &-container{
+                flex-wrap: wrap;
+            }
+        }
     }
 }

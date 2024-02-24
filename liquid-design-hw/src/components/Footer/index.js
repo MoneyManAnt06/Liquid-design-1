@@ -8,6 +8,8 @@ import { footerData } from '@/data/Footer';
 import FooterApp from '../FooterApp';
 import apple from "@/assets/images/apple.png"
 import googleplay from "@/assets/images/googleplay.png"
+import Button from '../Button';
+import { FaArrowRight } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -26,7 +28,7 @@ const Footer = () => {
     const renderFooterItems = () => {
         return footerData.items.map((item) => {
             return (
-               <div key={uuidv4()}>
+               <div className='Footer-lists' key={uuidv4()}>
                     <h3 className='Footer-titles'>{item.title}</h3>
                     <ul className='Footer-lists-items'>
                         {renderFooterList(item.list)}
@@ -39,22 +41,36 @@ const Footer = () => {
   return (
     <footer className='Footer'>
         <div className='container Footer-content'>
-            <div className='Footer-lists-container'>
-            <FooterApp
-                title='App'
-                src1={googleplay}
-                alt1='googleplay button'
-                src2={apple}
-                alt2='apple button'
-            />
-                {renderFooterItems()}
-                <FooterFollowers title='Síguenos'/>
-            </div>
-            <div className='Footer-newsletter'>
-                <h2>Newsletter</h2>
-                <Input type='text' placeholder='Nombre' />
-                <Input type='email' placeholder='Correo electronico' />
-                <Image src={CardPayment} alt='CardPayment' width='auto' height='auto' />
+            <div className='Footer-padding'>
+                <div className='Footer-lists-container'>
+                <FooterApp
+                    title='App'
+                    src1={googleplay}
+                    alt1='googleplay button'
+                    src2={apple}
+                    alt2='apple button'
+                />
+                    {renderFooterItems()}
+                    <FooterFollowers title='Síguenos'/>
+                </div>
+                <div className='Footer-newsletter'>
+                    <div className='Footer-info'>
+                        <h2 className='Footer-newsletter-title'>Newsletter</h2>
+                        <form className='Footer-form'>
+                            <Input customClass='Footer-input' type='text' placeholder='Nombre' />
+                            <div className='Footer-button-container'>
+                                <Input customClass='Footer-input Footer-input-2' type='email' placeholder='Correo electronico' /> 
+                                <Button 
+                                    customClass='Footer-input-button'
+                                    href='/'
+                                >
+                                    <FaArrowRight />
+                                </Button> 
+                            </div>
+                        </form>
+                    </div>
+                    <Image  className='Footer-card-payments' src={CardPayment} alt='CardPayment' width='auto' height='auto' />
+                </div>
             </div>
             <div className='Footer-copyright'>
                 <CopyRight 

@@ -1,10 +1,11 @@
+'use client';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
     const { customClass = '', text = '', onClick= () => {}, children = <></>, href = '' } = props;
     return (
-        <Link href={href} className={customClass} >
+        <Link href={href} className={customClass} onClick={onClick}>
             {text}
             {children}
         </Link>
