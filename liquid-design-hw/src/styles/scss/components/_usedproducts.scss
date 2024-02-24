@@ -1,0 +1,21 @@
+.Used-products{
+    &-title{
+        font-size: 24px;
+        font-family: $font-secondary;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 414px;
+        color: $title-text-purple;
+        margin-bottom: 70px;
+    }
+
+    &-cards{
+        display: flex;
+        width: 100%;
+        max-width: 928px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+}

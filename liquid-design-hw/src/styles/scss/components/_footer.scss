@@ -135,6 +135,12 @@
         }
     }
 
+    @media (min-width: 1625px) and (max-width: 1806px) { 
+        &-titles{
+            
+        }
+    }
+
     @include media-breakpoint-down(xl) {
         &-padding{
             padding: 97px 30px 64px;
@@ -251,6 +257,16 @@
         &-icons{
             font-size: 22px;
             gap: 15px;
+        }
+    }
+
+    @media (max-width: 370px) { 
+
+        &-lists-container{
+            max-width: 150px;
+        }
+        &-container{
+            flex-wrap: wrap;
         }
     }
 }

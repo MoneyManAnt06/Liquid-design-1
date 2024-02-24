@@ -1,0 +1,37 @@
+.Product-card{
+    &-container{
+        background-color: $product-card-background;
+        max-width: 294px;
+        width: 100%;
+        border: 1px solid $grey-light;
+    }
+
+    &-image{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $product-content-background;
+        font-size: 16px;
+        font-family: $font-primary;
+    }
+
+    &-title{
+        font-weight: 500;
+    }
+
+    &-price{
+        font-weight: 700;
+    }
+
+    &-button{
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        color: $black;
+    }
+}

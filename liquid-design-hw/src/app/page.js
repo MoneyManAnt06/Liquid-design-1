@@ -6,6 +6,7 @@ import TabCategories from "@/components/TabCategories";
 import TabGender from "@/components/TabGender";
 import TabServices from "@/components/TabServices";
 import Footer from "@/components/Footer";
+import UsedProducts from "@/components/UsedProducts";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,9 @@ export default function Home() {
     <TabServices />
     <Services />
     <Extras />
+    {/* <UsedProducts 
+      title="Productos utilizados"
+    /> */}
     <Footer/>
   </>
   );

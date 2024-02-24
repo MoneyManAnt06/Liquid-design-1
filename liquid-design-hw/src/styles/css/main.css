@@ -10061,20 +10061,21 @@ ul {
   .card--extra .card__content {
     padding-top: 28px; }
 
-.extras__content {
-  align-items: center;
-  display: flex;
-  flex-direction: column; }
-
-.extras__title {
-  color: #A191B2;
-  font-family: "Cormorant Infant", serif;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  margin-bottom: 48px;
-  text-align: center;
-  text-transform: uppercase; }
+.extras {
+  margin-bottom: 37px; }
+  .extras__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+  .extras__title {
+    color: #A191B2;
+    font-family: "Cormorant Infant", serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 48px;
+    text-align: center;
+    text-transform: uppercase; }
 
 .Footer {
   background-color: #313131; }
@@ -10227,6 +10228,11 @@ ul {
     .Footer-icons {
       font-size: 22px;
       gap: 15px; } }
+  @media (max-width: 370px) {
+    .Footer-lists-container {
+      max-width: 150px; }
+    .Footer-container {
+      flex-wrap: wrap; } }
 
 .Footer-app {
   display: flex;
@@ -10271,5 +10277,53 @@ ul {
       flex-direction: column; }
       .CopyRight-text {
         margin-bottom: 11px; } }
+
+.Used-products-title {
+  font-size: 24px;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 414px;
+  color: #A191B2;
+  margin-bottom: 70px; }
+
+.Used-products-cards {
+  display: flex;
+  width: 100%;
+  max-width: 928px;
+  margin: 0 auto;
+  justify-content: space-between; }
+
+.Product-card-container {
+  background-color: #D0D0D0;
+  max-width: 294px;
+  width: 100%;
+  border: 1px solid #D0D0D0; }
+
+.Product-card-image {
+  display: flex;
+  margin: 0 auto; }
+
+.Product-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif; }
+
+.Product-card-title {
+  font-weight: 500; }
+
+.Product-card-price {
+  font-weight: 700; }
+
+.Product-card-button {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000; }
 
 /*# sourceMappingURL=main.css.map */
